@@ -30,8 +30,8 @@ def grab():
                        pointer_mode=X.GrabModeAsync,
                        keyboard_mode=X.GrabModeAsync)
     yield
-    disp.ungrab_keyboard(time=X.CurrentTime)
     disp.ungrab_pointer(time=X.CurrentTime)
+    disp.ungrab_keyboard(time=X.CurrentTime)
 
 
 # Grabs both keyboard and mouse pointer until Ctrl+Alt+K is pressed.
